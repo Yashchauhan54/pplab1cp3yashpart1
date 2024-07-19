@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Mr.Yash Calculator</h1><br><br>
+     <form action="" method="POST">
+    <input type="text" placeholder="Enter Num1" name="num1">
+    <input type="text" placeholder="Enter Num2" name="num2"><br><br><br>
+    <input type="submit" value="+" name="+" class="i1">
+    <input type="submit" value="-" name="-" class="i1">
+    <input type="submit" value="*" name="*" class="i1">
+    <input type="submit" value="/" name="/" class="i1"><br><br>
+    <input type="submit" class="i2" value="x^2" name="x^2">
+    <input type="submit" class="i2" value="x^3" name="x^3">
+    <input type="submit" class="i2" value="x^n" name="x^n"><br><br>
+
+ 
+     <p class="p2">@ViewData["sum"]</p>
+     <p class="p2">@ViewData["substract"]</p>
+     <p class="p2">@ViewData["multiply"]</p>
+     <p class="p2">@ViewData["division"]</p>
+     <p class="p2">@ViewData["squares"]</p>
+     <p class="p2">@ViewData["cubes"]</p>
+     <p class="p2">@ViewData["powers"]</p>
+    </form>
+    <p>Learn about <a href="https://github.com/Yashchauhan54">Learn Everything you want to build new Web apps and different java project with Mr.Yash</a>.</p>
+</div>
